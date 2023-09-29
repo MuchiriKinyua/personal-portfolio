@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/76205c1026.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header" class="move-left">
+    <div class="container">
+        <nav>
+            <img src="images/LOGO.png" class="LOGO">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times close-icon custom-close-icon" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <h1>Hi, I'm <span>Muchiri Kinyua</span></h1>
+            <p>Networker</p> <br>
+            <p>Data Scientist</p> <br>
+            <p>Mobile App Designer</p>
+        </div>
+    </div>
+</div>
+
+<!-- About -->
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/M4">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Throughout my career, I have successfully developed and launched numerous mobile apps using Flutter, catering to diverse client needs.
+                    As a data scientist, I have worked on projects that involved data analysis, predictive modeling, and data-driven insights.
+                    My expertise in machine learning has allowed me to create predictive models and implement data-driven solutions that have made a significant impact.
+                    I have also cultivated a strong professional network, connecting with experts and professionals in various industries.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Mobile App</span><br>Development</li>
+                            <li><span>Mobile App</span><br>UI Interfaces</li>
+                            <li><span>Mobile App</span><br>Building Android/IOS apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023</span><br>Attachment  - National Museum of Kenya</li>
+                            <li><span>2020</span><br>Cyber Manager - Bidii Cyber</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023</span><br>Moringa School - Data Science and Machine Learning</li>
+                            <li><span>2018 - 2022</span><br>Technical University of Kenya - Bachelors in Communication and Computer Networks</li>
+                            <li><span>2020 - 2021</span><br>Jomo Kenyatta University of Agriculture and Technology - CISCO Networking(CCNA 1, 2, 3)</li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+    
+<!--Services-->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-chart-line"></i>
+                <h2>Data Science</h2>
+                <p>Data Science and Machine Learning using python</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>UI and Mobile Development</h2>
+                <p>I develop apps using Flutter framework (Dart programming language) for both android and IOS.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-network-wired"></i>
+                <h2>Networking</h2>
+                <p>I can install and manage both office hardware e.g routers and switches and softwares e.g Operating Systems, Microsoft office</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Portfolio-->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/mmaziwa.png">
+                <div class="layer">
+                    <h3>Mmaziwa App</h3>
+                    <p>This app uses M-Pesa to help farmers sell their milk and store their transactions</p>
+                    <div class="parent-container">
+                        <a href="https://github.com/MuchiriKinyua/Mmaziwa" class="github-link" target="_blank">
+                            <i class="fas fa-external-link-alt"></i> GitHub Repository
+                        </a>                    
+                    </div>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/NLP.jpeg">
+                <div class="layer">
+                    <h3>NLP PROJECT</h3>
+                    <p>Machine Learning Data Science Project that analyzes the sentiments on crowd-flower brands and products</p>
+                    <div class="parent-container">
+                        <div class="parent-container">
+                            <a href="https://github.com/MuchiriKinyua/Mmaziwa" class="github-link" target="_blank">
+                                <i class="fas fa-external-link-alt"></i> GitHub Repository
+                            </a>
+                        </div>                        
+                        </a>                    
+                    </div>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/2hand2.png">
+                <div class="layer">
+                    <h3>UIs</h3>
+                    <p>Different UI designs for different app projects using Figma</p>
+                    <div class="parent-container">
+                        <a href="https://www.figma.com/file/s4j9ZoDeI5gv3Cf9HisYFh/TUSOME--E-LEARNING-APP?type=design&node-id=0-1&mode=design&t=n18HmLNJlMvUGtEc-0" class="github-link" target="_blank">
+                            <i class="fas fa-external-link-alt"></i> Figma
+                        </a> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/MuchiriKinyua" class="btn" target="_blank">See More
+        </a>
+    </div>
+</div>
+
+<!--Contact-->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i> nicholas.kinyua@student.moringaschool.com</p>
+                <p><i class="fas fa-phone-square-alt"></i> 0713030677</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/muchiri-kinyua-9b702620a/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com/nicholas.muchiri.714/"><i class="fab fa-facebook"></i></a>
+                    <a href="https://twitter.com/Nichola62959453"><i class="fa-brands fa-square-x-twitter"></i></a>
+                </div>
+                <a href="images/KINYUA NICHOLAS MUCHIRI CV.pdf" download class="btn btn2">Download CV</a><br>
+                <a href="images/Intern resume.docx" download class="btn btn2" style="margin-top: 5px;">Download resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright &copy; Made with <i class="fas fa-heart"></i> by MuchiriKinyua. All rights reserved.</p>
+    </div>
+</div>
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu"); 
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+<form name="submit-to-google-sheet">
+    <input name="email" type="email" placeholder="Email" required>
+    <button type="submit">Send</button>
+  </form>
+  
+  <script>
+    const scriptURL = "https://script.google.com/macros/s/AKfycbzPUegb04bGBLv9HO-hyPI6lc7NbT-d7HlIlMT9Pt7YfvyXZhcKn-M7-ADep7tj2Zru6A/exec"
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
