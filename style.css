@@ -83,7 +83,7 @@ nav ul li a:hover::after{
 }
 .header-text p::before {
     content: "•"; 
-    color: #FFFF00; 
+    color: #fff; 
     display: inline-block;
     width: 10px; 
     margin-right: 10px; 
