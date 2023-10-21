@@ -98,6 +98,7 @@ nav ul li a:hover::after{
     font-size: 10px;
     color: #fff;
     display: inline-block;
+    margin-right: 30px;
 }
 .header-text p {
     font-size: 30px; 
