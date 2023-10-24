@@ -38,7 +38,7 @@ nav{
     height: 200px;
     width: 350px;
     margin-top: 10px;
-    margin-right: 10px;
+    max-width: 100%;
     display: inline-block;
     transition: transform 0.3s;
 }
