@@ -3,74 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Portfolio</title>
+    <title>Muchiri Kinyua Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <h1>Your Name</h1>
-        <p>Software Developer | AI Enthusiast | Tech Innovator</p>
-    </header>
-    
-    <section id="about">
-        <img src="#" alt="Your Image">
-        <p>Welcome to my portfolio! I specialize in Laravel, AI integration, and business ERP solutions. With expertise in web and mobile development, I build cutting-edge solutions for various industries.</p>
-    </section>
-    
-    <section id="experience">
-        <h2>Work Experience</h2>
-        <div class="experience">
-            <h3>National Museum of Kenya - Intern</h3>
-            <p>Developed a Library Management System</p>
-            <p>January 2023 - April 2023</p>
-            <div class="slider">
-                <img src="#" alt="Project Image 1">
-                <img src="#" alt="Project Image 2">
-            </div>
-        </div>
-        <div class="experience">
-            <h3>Learnsoft Beliotech Solutions - Laravel Developer</h3>
-            <p>Worked on a Hospital Management System</p>
-            <p>October 2024 - Present</p>
-            <div class="slider">
-                <img src="#" alt="Project Image 1">
-                <img src="#" alt="Project Image 2">
-            </div>
-        </div>
-        <div class="experience">
-            <h3>Everything Data</h3>
-            <p>Developed a Hotel Booking and Cancellation System</p>
-            <p>January 2025 - Present</p>
-            <div class="slider">
-                <img src="#" alt="Project Image 1">
-                <img src="#" alt="Project Image 2">
-            </div>
-        </div>
-    </section>
-    
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Business ERP System</h3>
-            <p>A robust Laravel-based ERP system with geofencing, attendance tracking, and AI-powered face verification.</p>
-        </div>
-        <div class="project">
-            <h3>Acehub</h3>
-            <p>An online platform for booking and ordering write-ups, optimized for seamless user experience.</p>
-        </div>
-        <div class="project">
-            <h3>Breast Cancer ML Prediction</h3>
-            <p>An AI-driven system that provides cancer risk analysis with feature importance, risk categorization, and heatmaps.</p>
-        </div>
-    </section>
-    
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: your.email@example.com</p>
-        <p>LinkedIn: linkedin.com/in/yourprofile</p>
-        <p>GitHub: github.com/yourprofile</p>
-    </section>
-
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -99,20 +33,107 @@
         }
         .slider {
             display: flex;
-            overflow-x: auto;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            position: relative;
+            width: 100%;
+            max-width: 400px;
+            margin: 10px auto;
         }
         .slider img {
-            width: 150px;
-            height: 100px;
-            margin-right: 10px;
+            width: 100%;
+            height: auto;
             border-radius: 5px;
+            display: none;
         }
-        img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            margin-top: 10px;
+        .slider img.active {
+            display: block;
         }
     </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.querySelectorAll(".slider").forEach(slider => {
+                let images = slider.querySelectorAll("img");
+                let currentIndex = 0;
+                
+                function showImage(index) {
+                    images.forEach(img => img.classList.remove("active"));
+                    images[index].classList.add("active");
+                }
+                
+                showImage(currentIndex);
+                setInterval(() => {
+                    currentIndex = (currentIndex + 1) % images.length;
+                    showImage(currentIndex);
+                }, 3000);
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Muchiri Kinyua</h1>
+        <p>Data Scientist | Web Developer</p>
+    </header>
+    
+    <section id="about">
+        <img height="200px" width="200px" src="images/Muchiri.jpg" alt="Your Image">
+        <p>Welcome to my portfolio! I specialize in Data Science and Laravel development. With expertise in web development, I build cutting-edge solutions for various industries.</p>
+    </section>
+    
+    <section id="experience">
+        <h2>Work Experience</h2>
+        <div class="experience">
+            <h3>National Museum of Kenya - Intern</h3>
+            <p>Developed a Library Management System</p>
+            <p>January 2023 - April 2023</p>
+            <div class="slider">
+                <img src="images/Screenshot from 2025-02-21 07-35-30.png" alt="Project Image 1" class="active">
+                <img src="images/Screenshot from 2025-02-21 07-38-10.png" alt="Project Image 2">
+            </div>
+        </div>
+        <div class="experience">
+            <h3>Learnsoft Beliotech Solutions - Laravel Developer</h3>
+            <p>Worked on a Hospital Management System</p>
+            <p>October 2024 - Present</p>
+            <div class="slider">
+                <img src="images/Screenshot from 2025-02-21 07-01-32.png" alt="Project Image 1" class="active">
+                <img src="images/Screenshot from 2025-02-21 05-21-03.png" alt="Project Image 2">
+            </div>
+        </div>
+        <div class="experience">
+            <h3>Everything Data</h3>
+            <p>Developed a Hotel Booking and Cancellation System</p>
+            <p>January 2025 - Present</p>
+            <div class="slider">
+                <img src="images/Screenshot from 2025-02-21 07-06-33.png" alt="Project Image 1" class="active">
+                <img src="images/Screenshot from 2025-02-21 12-31-28.png" alt="Project Image 2">
+            </div>
+        </div>
+    </section>
+    
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Business ERP System</h3>
+            <p>A robust Laravel-based ERP system with geofencing, attendance tracking, and AI-powered face verification.</p>
+        </div>
+        <div class="project">
+            <h3>Acehub</h3>
+            <p>An online platform for booking and ordering write-ups, optimized for seamless user experience.</p>
+        </div>
+        <div class="project">
+            <h3>Breast Cancer ML Prediction</h3>
+            <p>An AI-driven system that provides cancer risk analysis with feature importance, risk categorization, and heatmaps.</p>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: your.email@example.com</p>
+        <p>GitHub: github.com/yourprofile</p>
+        <p>LinkedIn: linkedin.com/in/yourprofile</p>
+    </section>
 </body>
 </html>
