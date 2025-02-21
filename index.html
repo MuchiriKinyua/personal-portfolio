@@ -50,6 +50,48 @@
         .slider img.active {
             display: block;
         }
+        #experience {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.experience {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    width: 100%;
+    max-width: 800px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    text-align: left;
+}
+
+.experience h3 {
+    margin-bottom: 10px;
+}
+
+.experience p {
+    text-align: justify; /* Ensures even alignment */
+}
+
+.slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    margin-top: 10px;
+}
+
+.slider img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
     </style>
     <script>
         document.addEventListener("DOMContentLoaded", function() {
@@ -86,7 +128,7 @@
         <h2>Work Experience</h2>
         <div class="experience">
             <h3>National Museum of Kenya - Intern</h3>
-            <p>Developed a Library Management System</p>
+            <p>The Library Management System is a web-based application designed to efficiently manage library operations such as book inventory, member records, borrowings, and reservations. Built with Laravel, it ensures seamless book tracking, digital resource management, and fine processing.</p>
             <p>January 2023 - April 2023</p>
             <div class="slider">
                 <img src="pictures/Screenshot from 2025-02-21 07-35-30.png" alt="Project Image 1" class="active">
@@ -94,18 +136,18 @@
             </div>
         </div>
         <div class="experience">
-            <h3>Learnsoft Beliotech Solutions - Laravel Developer</h3>
-            <p>Worked on a Hospital Management System</p>
-            <p>October 2024 - Present</p>
+            <h3>Everything Data - Data Scientist</h3>
+            <p>The Hospital Management System (HMS) is a comprehensive solution designed to streamline hospital operations. This system provides functionalities for managing patients, doctors, appointments, billing, and more. The application is built using Laravel (backend) and integrates with Flask for machine learning-based disease prediction and a ChatBot to help users navigate through the system.</p>
+            <p>January 2025 - Present</p>
             <div class="slider">
                 <img src="pictures/Screenshot from 2025-02-21 07-01-32.png" alt="Project Image 1" class="active">
                 <img src="pictures/Screenshot from 2025-02-21 05-21-03.png" alt="Project Image 2">
             </div>
         </div>
         <div class="experience">
-            <h3>Everything Data</h3>
-            <p>Developed a Hotel Booking and Cancellation System</p>
-            <p>January 2025 - Present</p>
+            <h3>Learnsoft Beliotech Solutions - Laravel Developer</h3>
+            <p>This project is a hotel booking system designed for efficient room reservations, cancellations, and management of hotel operations. The system provides a seamless experience for customers and administrators.</p>
+            <p>October 2024 - Present</p>
             <div class="slider">
                 <img src="pictures/Screenshot from 2025-02-21 07-06-33.png" alt="Project Image 1" class="active">
                 <img src="pictures/Screenshot from 2025-02-21 12-31-28.png" alt="Project Image 2">
@@ -113,27 +155,11 @@
         </div>
     </section>
     
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Business ERP System</h3>
-            <p>A robust Laravel-based ERP system with geofencing, attendance tracking, and AI-powered face verification.</p>
-        </div>
-        <div class="project">
-            <h3>Acehub</h3>
-            <p>An online platform for booking and ordering write-ups, optimized for seamless user experience.</p>
-        </div>
-        <div class="project">
-            <h3>Breast Cancer ML Prediction</h3>
-            <p>An AI-driven system that provides cancer risk analysis with feature importance, risk categorization, and heatmaps.</p>
-        </div>
-    </section>
-    
     <section id="contact">
         <h2>Contact Me</h2>
-        <p>Email: muchiri.kinyua6564.com</p>
-        <p>GitHub: https://github.com/MuchiriKinyua</p>
-        <p>LinkedIn: https://www.linkedin.com/in/muchiri-kinyua-9b702620a/</p>
-    </section>
+        <p>GitHub: <a href="https://github.com/MuchiriKinyua" target="_blank">github.com/MuchiriKinyua</a></p>
+        <p>Email: <a href="mailto:muchiri.kinyua6564@gmail.com">muchiri.kinyua6564@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/muchiri-kinyua-9b702620a/" target="_blank">linkedin.com/in/muchiri-kinyua</a></p>
+    </section>    
 </body>
 </html>
